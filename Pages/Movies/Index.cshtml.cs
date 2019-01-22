@@ -28,7 +28,7 @@ namespace RazorPagesMovie.Pages.Movies
         public string MovieGenre { get; set; }
         public async Task OnGetAsync()
         {
-            // using System.Linq
+            // using System.Linq+
             IQueryable<string> genreQuery = from m in _context.Movie
                                             orderby m.Genre
                                             select m.Genre;
